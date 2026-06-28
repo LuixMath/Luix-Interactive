@@ -5,31 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Luix Interactive | Portfolio</title>
-  <meta name="description" content="Portfólio de jogos web, aplicações interativas e experimentos digitais." />
-  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="description" content="Portfolio of web games, interactive applications and digital experiments." />
 
-  <meta property="og:title" content="Luix Interactive" />
-  <meta property="og:description" content="Jogos web, aplicações interativas e experimentos digitais." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/images/preview.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:title" content="Luix Interactive">
+  <meta property="og:description" content="Portfolio of web games, interactive applications and digital experiments.">
+  <meta property="og:image" content="assets/images/preview.png">
+  <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="icon" href="assets/images/profile.png" type="image/png">
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <div class="ambient ambient--one"></div>
   <div class="ambient ambient--two"></div>
-  <div class="ambient ambient--three"></div>
 
   <header class="site-header">
     <nav class="nav container" aria-label="Menu principal">
-      <a class="nav__brand" href="#">Luix<span>Interactive</span></a>
+      <a class="nav__brand" href="#">
+        Luix<span>Interactive</span>
+      </a>
 
       <div class="nav__actions">
         <button class="language-toggle" type="button" data-lang-toggle aria-label="Alternar idioma">
@@ -58,20 +58,21 @@
           <img src="assets/images/profile.png" alt="Foto de perfil de Luix">
         </div>
 
-        <p class="hero__eyebrow" data-i18n="heroEyebrow">Portfólio de projetos interativos</p>
+        <p class="hero__eyebrow" data-i18n="heroEyebrow">Portfólio de projetos digitais</p>
 
         <h1 class="hero__title" data-i18n="heroTitle">
-          Jogos, protótipos e aplicações web em evolução.
+          Jogos web, sistemas interativos e protótipos em desenvolvimento.
         </h1>
 
         <p class="hero__description" data-i18n="heroDescription">
-          Um espaço para reunir projetos próprios, fan projects, testes de gameplay,
-          interfaces e sistemas que estou desenvolvendo com foco em web e experiências interativas.
+          Um espaço para reunir projetos próprios, fan projects, interfaces, testes de gameplay e aplicações web que estou construindo com foco em produto, código e experiência.
         </p>
 
         <div class="hero__actions">
           <a class="button button--primary" href="#projects" data-i18n="heroPrimary">Ver projetos</a>
-          <a class="button button--secondary" href="https://github.com/LuixMath" target="_blank" rel="noopener">GitHub</a>
+          <a class="button button--secondary" href="https://github.com/LuixMath" target="_blank" rel="noopener">
+            GitHub
+          </a>
         </div>
       </div>
 
@@ -80,7 +81,7 @@
 
         <p data-i18n="widgetLabel">Status</p>
         <strong data-i18n="widgetTitle">Projetos em evolução</strong>
-        <span data-i18n="widgetText">Jogos, protótipos e estudos em desenvolvimento</span>
+        <span data-i18n="widgetText">Web apps, jogos e sistemas experimentais</span>
 
         <div class="hero-widget__stats">
           <div>
@@ -90,7 +91,7 @@
 
           <div>
             <b>Full-stack</b>
-            <small>Web, Firebase e Cloudflare</small>
+            <small>Firebase · Cloudflare</small>
           </div>
         </div>
       </aside>
@@ -101,26 +102,25 @@
         <p class="section-heading__kicker" data-i18n="projectsKicker">Projetos</p>
         <h2 class="section-heading__title" data-i18n="projectsTitle">Trabalhos em destaque</h2>
         <p class="section-heading__text" data-i18n="projectsText">
-          Alguns projetos estão em fase inicial, outros já têm sistemas online ou demos em desenvolvimento.
+          Projetos em fases diferentes: alguns são demos, outros ainda estão em prototipagem ou estruturação técnica.
         </p>
       </div>
 
       <div class="projects__grid">
         <article class="project-card" data-tilt>
           <div class="project-card__cover">
-            <img src="assets/images/inazuma-lock-cover.png" alt="Imagem de capa do Inazuma Lock">
+            <img src="assets/images/inazuma-lock-cover.png" alt="Imagem de capa do Inazuma Lock" loading="lazy">
+            <span class="project-card__status" data-i18n="statusProgress">Em desenvolvimento</span>
           </div>
 
           <div class="project-card__content">
             <div class="project-card__header">
-              <img class="project-card__icon" src="assets/images/inazuma-lock-icon.png" alt="">
+              <img class="project-card__icon" src="assets/images/inazuma-lock-icon.png" alt="" loading="lazy">
               <div>
                 <h3 class="project-card__title">Inazuma Lock</h3>
                 <p class="project-card__meta" data-i18n="inazumaMeta">Futebol tático / RPG</p>
               </div>
             </div>
-
-            <div class="project-card__status is-progress" data-i18n="statusProgress">Em desenvolvimento</div>
 
             <div class="project-card__tags">
               <span>Web</span>
@@ -130,31 +130,29 @@
             </div>
 
             <p class="project-card__description" data-i18n="inazumaDescription">
-              Fan project inspirado em Inazuma Eleven e Blue Lock, com futebol tático,
-              partidas simuladas e progressão de jogadores no estilo anime esportivo.
+              Fan project inspirado em Inazuma Eleven e Blue Lock, com futebol tático, partidas simuladas e progressão de jogadores.
             </p>
 
-            <a class="project-card__button" href="projects/inazuma-lock.html" data-i18n="viewDetails">
-              Ver detalhes
-            </a>
+            <span class="project-card__button is-disabled" aria-disabled="true" data-i18n="inDevelopment">
+              Em desenvolvimento
+            </span>
           </div>
         </article>
 
         <article class="project-card" data-tilt>
           <div class="project-card__cover">
-            <img src="assets/images/charmmo-cover.png" alt="Imagem de capa do CharMMO">
+            <img src="assets/images/charmmo-cover.png" alt="Imagem de capa do CharMMO" loading="lazy">
+            <span class="project-card__status project-card__status--online">Online systems</span>
           </div>
 
           <div class="project-card__content">
             <div class="project-card__header">
-              <img class="project-card__icon" src="assets/images/charmmo-icon.png" alt="">
+              <img class="project-card__icon" src="assets/images/charmmo-icon.png" alt="" loading="lazy">
               <div>
                 <h3 class="project-card__title">CharMMO</h3>
                 <p class="project-card__meta" data-i18n="charmmoMeta">MMORPG web / Online</p>
               </div>
             </div>
-
-            <div class="project-card__status is-progress" data-i18n="statusProgress">Em desenvolvimento</div>
 
             <div class="project-card__tags">
               <span>Pokémon</span>
@@ -164,31 +162,29 @@
             </div>
 
             <p class="project-card__description" data-i18n="charmmoDescription">
-              Fan project inspirado em Pokémon, misturando exploração online,
-              criação de conta, ranking, chat e sistemas de MMORPG.
+              Fan project inspirado em Pokémon, misturando exploração online, criação de conta, ranking, chat e sistemas de MMORPG.
             </p>
 
-            <a class="project-card__button" href="projects/charmmo.html" data-i18n="viewDetails">
-              Ver detalhes
-            </a>
+            <span class="project-card__button is-disabled" aria-disabled="true" data-i18n="inDevelopment">
+              Em desenvolvimento
+            </span>
           </div>
         </article>
 
         <article class="project-card" data-tilt>
           <div class="project-card__cover">
-            <img src="assets/images/secret-cover.png" alt="Imagem de capa do próximo projeto">
+            <img src="assets/images/secret-cover.png" alt="Imagem de capa do próximo projeto" loading="lazy">
+            <span class="project-card__status project-card__status--draft" data-i18n="statusDraft">Em estudo</span>
           </div>
 
           <div class="project-card__content">
             <div class="project-card__header">
-              <img class="project-card__icon" src="assets/images/secret-icon.png" alt="">
+              <img class="project-card__icon" src="assets/images/secret-icon.png" alt="" loading="lazy">
               <div>
                 <h3 class="project-card__title" data-i18n="secretTitle">Projeto reservado</h3>
                 <p class="project-card__meta" data-i18n="secretMeta">Protótipo em estudo</p>
               </div>
             </div>
-
-            <div class="project-card__status is-paused" data-i18n="statusReserved">Reservado</div>
 
             <div class="project-card__tags">
               <span data-i18n="soonTag">Em breve</span>
@@ -196,12 +192,11 @@
             </div>
 
             <p class="project-card__description" data-i18n="secretDescription">
-              Espaço reservado para um próximo projeto, ainda em fase de testes,
-              documentação e definição de escopo.
+              Espaço reservado para um próximo projeto, ainda em fase de testes, documentação e definição de escopo.
             </p>
 
-            <span class="project-card__button is-disabled" aria-disabled="true" data-i18n="notAvailable">
-              Ainda não disponível
+            <span class="project-card__button is-disabled" aria-disabled="true" data-i18n="inDevelopment">
+              Em desenvolvimento
             </span>
           </div>
         </article>
@@ -209,24 +204,32 @@
     </section>
 
     <section class="stack container" id="stack">
-      <div class="stack__glass">
-        <div>
-          <p class="section-heading__kicker" data-i18n="stackKicker">Stack</p>
-          <h2 data-i18n="stackTitle">Tecnologias que uso nos projetos.</h2>
-          <p data-i18n="stackText">
-            A base varia conforme o projeto: alguns são páginas estáticas, outros usam autenticação,
-            banco de dados, deploy e serviços externos.
-          </p>
-        </div>
+      <div class="section-heading">
+        <p class="section-heading__kicker">Stack</p>
+        <h2 class="section-heading__title" data-i18n="stackTitle">Tecnologias e serviços</h2>
+        <p class="section-heading__text" data-i18n="stackText">
+          Ferramentas que uso para criar interfaces, sistemas online, autenticação, banco de dados e deploy.
+        </p>
+      </div>
 
-        <div class="stack__list" aria-label="Tecnologias e serviços">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Firebase</span>
-          <span>Cloudflare</span>
-          <span>GitHub Pages</span>
-        </div>
+      <div class="stack__grid">
+        <article class="stack-card">
+          <span>Frontend</span>
+          <strong>HTML, CSS, JavaScript</strong>
+          <p data-i18n="stackFrontend">Estrutura, interface, responsividade e interações no navegador.</p>
+        </article>
+
+        <article class="stack-card">
+          <span>Backend as a Service</span>
+          <strong>Firebase</strong>
+          <p data-i18n="stackFirebase">Autenticação, banco de dados, regras de segurança e sistemas online.</p>
+        </article>
+
+        <article class="stack-card">
+          <span>Deploy</span>
+          <strong>Cloudflare / GitHub Pages</strong>
+          <p data-i18n="stackDeploy">Publicação de projetos, páginas estáticas e testes acessíveis pela web.</p>
+        </article>
       </div>
     </section>
 
@@ -235,8 +238,7 @@
         <p class="section-heading__kicker" data-i18n="aboutKicker">Sobre</p>
         <h2 data-i18n="aboutTitle">Um portfólio para acompanhar projetos reais em evolução.</h2>
         <p data-i18n="aboutText">
-          A ideia deste site é reunir o que estou criando, testando e melhorando. Alguns projetos são páginas estáticas,
-          outros usam serviços como Firebase e Cloudflare, mas todos fazem parte da minha evolução com desenvolvimento web e games.
+          A ideia deste site é reunir o que estou criando, testando e melhorando. Alguns projetos são páginas estáticas, outros usam serviços como Firebase e Cloudflare, mas todos fazem parte da minha evolução com desenvolvimento web e games.
         </p>
       </div>
     </section>
@@ -247,24 +249,29 @@
           <p class="section-heading__kicker" data-i18n="contactKicker">Contato</p>
           <h2 data-i18n="contactTitle">Quer acompanhar ou falar comigo?</h2>
           <p data-i18n="contactText">
-            Alguns projetos estão no GitHub, outros usam serviços como Cloudflare e Firebase.
-            Por aqui vou reunindo links, demos e atualizações conforme cada ideia evolui.
+            Alguns projetos estão no GitHub, outros usam serviços como Cloudflare e Firebase. Por aqui vou reunindo links, demos e atualizações conforme cada ideia evolui.
           </p>
         </div>
 
         <div class="contact__links">
           <a href="https://github.com/LuixMath" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.08 1.84 2.82 1.31 3.51 1 .11-.78.42-1.31.76-1.61-2.67-.31-5.48-1.34-5.48-5.94 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.69.25 2.95.13 3.25.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.38.82 1.11.82 2.25v3.34c0 .32.21.69.83.57A12 12 0 0 0 12 .5Z" /></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.08 1.84 2.82 1.31 3.51 1 .11-.78.42-1.31.76-1.61-2.67-.31-5.48-1.34-5.48-5.94 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.69.25 2.95.13 3.25.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.38.82 1.11.82 2.25v3.34c0 .32.21.69.83.57A12 12 0 0 0 12 .5Z" />
+            </svg>
             <span>GitHub</span>
           </a>
 
           <a href="https://www.youtube.com/@Luluix" target="_blank" rel="noopener" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.4.58A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.12c1.87.58 9.4.58 9.4.58s7.53 0 9.4-.58a3 3 0 0 0 2.1-2.12A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.7V8.3l6.4 3.7-6.4 3.7Z" /></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.4.58A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.12c1.87.58 9.4.58 9.4.58s7.53 0 9.4-.58a3 3 0 0 0 2.1-2.12A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.7V8.3l6.4 3.7-6.4 3.7Z" />
+            </svg>
             <span>YouTube</span>
           </a>
 
           <a href="https://www.instagram.com/luixmath/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5.38-2.13a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25Z" /></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5.38-2.13a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25Z" />
+            </svg>
             <span>Instagram</span>
           </a>
         </div>
